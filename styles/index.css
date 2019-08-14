@@ -20,3 +20,54 @@
   padding: 3px 5px;
   border-radius: 3px;
 }
+
+.input-line {
+  display: flex;
+  align-items: center;
+  height: 45px;
+}
+
+.input-line span {
+  width: 20px;
+}
+
+.input-line input {
+  flex: 1;
+  appearance: none;
+  border: 0;
+  border-bottom: 1px solid #999;
+}
+
+table {
+  border: 1px solid #999;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+tr td {
+  border: 1px solid #999;
+  height: 45px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.image-container .img {
+  width: 40%;
+}
+
+.img::after {
+  content: attr(title);
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.image-container img {
+  width: 100%;
+}

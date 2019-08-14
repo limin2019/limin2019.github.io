@@ -39,10 +39,91 @@
       <div class="card">
         <div class="card-header">活动1 【项目预热】人工方式查找唐朝诗人之间的关系（看看哪位诗人提诗@对方了？）</div>
         <div class="card-body">
-          <p><i class="icon iconfont icon-xinbaniconshangchuan-6 icon-md text-warning"></i>
+          <p>
+            <i class="icon iconfont icon-xinbaniconshangchuan-6 icon-md text-warning"></i>
             <span class="text-white bg-warning text-sm-only">要求</span>
             从诗词库(data.txt)中找出“杜甫、李白、孟浩然、王维、贺知章”五人间的题诗关系。比比看 2 分钟内哪 组找到的关系最多?
           </p>
+          <p>第一步：查找诗人关系(可参考后面的提示操作)，填写下表</p>
+          <table>
+            <tr>
+              <td rowspan="2" width="150px"></td>
+              <td colspan="3">检验关系</td>
+              <td rowspan="2" width="250px">关系分析</td>
+            </tr>
+            <tr>
+              <td width="80">作者</td>
+              <td width="200">题目</td>
+              <td>诗句</td>
+            </tr>
+            <tr>
+              <td contenteditable="true" rowspan="5"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+                <td contenteditable="true" rowspan="5"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+              </tr>
+              <tr>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+              </tr>
+              <tr>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+              </tr>
+              <tr>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+              </tr>
+              <tr>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+              </tr>
+          </table>
+          <p style="margin-top: 15px;">第二步：根据表中的关系分析，绘制诗人关系图</p>
+          <div class="image-container">
+            <div class="img" title="图1" ><img src="./images/img-1.png" alt=""></div>
+            <div class="img" title="图2"><img src="./images/img-3.png" alt=""></div>\
+          </div>
           <p><i class="icon iconfont icon-xinbaniconshangchuan-1 icon-md text-warning"></i> <span class="text-white bg-danger text-sm-only">提示</span></p>
           <ul class="list-group list-group-flush">
             <li class="list-group-item text-sm border-0 py-1">1. 在 data.txt 文件中可以通过快捷键 <kbd><kbd>Ctrl</kbd> + <kbd>F</kbd></kbd> 打开“查找对话框” ，如图 2 所示;然后将杜 甫所有诗句选中复制到新文件(【文件】→【新建】)中，再依次查找李白</li>
@@ -53,13 +134,82 @@
       <div class="card mt-5">
         <div class="card-header">活动 2 【项目体验 1】依据算法流程图，完善 Python 程序查找诗人关系</div>
         <div class="card-body">
-
+            <p>
+              <i class="icon iconfont icon-xinbaniconshangchuan-6 icon-md text-warning"></i>
+              <span class="text-white bg-warning text-sm-only">要求</span>
+              结合项目问题中枚举算法设计的流程图，从“枚举范围”、“验证条件”、“关系计数”等方面对指定程序 进行完善(可以两人一组互助完成)，实现查找诗人关系并显示题诗数量。
+            </p>
+            <p><i class="icon iconfont icon-xinbaniconshangchuan-1 icon-md text-warning"></i> <span class="text-white bg-danger text-sm-only">提示</span></p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-sm border-0 py-1">1. 打开程序文件:右键单击文件“查找诗人关系 v1.0.x.py”，选择 Edit with IDEL 命令打开文件。</li>
+              <li class="list-group-item text-sm border-0 py-1">
+                2. 完善程序文件:结合枚举算法设计，对照下面提示的程序语句功能，在适合位置填写程序语句(注意切换英 文输入状态)。
+                <div class="image-container" style="margin-top: 15px;">
+                  <div class="img" title="图3"><img src="./images/img-2.png" alt=""></div>
+                </div>
+              </li>
+              <li class="list-group-item text-sm border-0 py-1">
+                3.保存并运行程序:根据程序运行结果，填写下面表格。
+                <table style="margin-top: 15px;">
+                  <tr>
+                    <td>诗人甲 → 诗人乙</td>
+                    <td>杜甫 → 李白</td>
+                    <td>李白 → 杜甫</td>
+                    <td>李白 → 孟浩然</td>
+                    <td>孟浩然 → 李白</td>
+                    <td>李白 → 王维</td>
+                    <td>王维 → 李白</td>
+                  </tr>
+                  <tr>
+                    <td>题诗数量</td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="7" style="text-align: left; padding-left: 20px;">完成表格之后，可以查询其他感兴趣诗人之间的题诗数量。</td>
+                  </tr>
+                </table>
+              </li>
+            </ul>
         </div>
       </div>
       <div class="card mt-5">
         <div class="card-header">活动 3 【项目体验 2】分析运行结果，修改算法完善程序</div>
         <div class="card-body">
-
+            <p>
+              <i class="icon iconfont icon-xinbaniconshangchuan-6 icon-md text-warning"></i>
+              <span class="text-white bg-warning text-sm-only">要求</span>
+              根据程序运行出现的古诗缺漏问题，以及可视化呈现诗人关系的需求，继续修改算法完善程序(每组任选一个任务小组合作完成)
+            </p>
+            <p><i class="icon iconfont icon-xinbaniconshangchuan-1 icon-md text-warning"></i> <span class="text-white bg-danger text-sm-only">提示</span></p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-sm border-0 py-1">1. 在 data.txt 文件中可以通过快捷键 <kbd><kbd>Ctrl</kbd> + <kbd>F</kbd></kbd> 打开“查找对话框” ，如图 2 所示;然后将杜 甫所有诗句选中复制到新文件(【文件】→【新建】)中，再依次查找李白</li>
+              <li class="list-group-item text-sm border-0 py-1">2. 为了提高效率，各组长要合理安排成员的分工，进行团队合作。</li>
+            </ul>
+        </div>
+      </div>
+      <div class="card border-0">
+        <div class="card-body">
+          <p class="card-title font-weight-normal"><i class="icon iconfont icon-xinbaniconshangchuan-8 icon-md text-info"></i> 初步研究结论</p>
+        </div>
+        <div class="card" style="padding: 20px;">
+          <p>通过这个项目研究，你有哪些发现和思考?</p>
+          <div class="input-line">
+            <span>1. </span>
+            <input type="text" name="result-1">
+          </div>
+          <div class="input-line">
+              <span>2. </span>
+            <input type="text" name="result-2">
+          </div>
+          <div class="input-line">
+              <span>3. </span>
+            <input type="text" name="result-3">
+          </div>
         </div>
       </div>
     </div>
