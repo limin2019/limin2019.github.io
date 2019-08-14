@@ -58,7 +58,9 @@ tr td {
 }
 
 .image-container .img {
-  width: 40%;
+  flex: 1;
+  margin-right: 20px;
+  max-width: 80%;
 }
 
 .img::after {
@@ -70,4 +72,29 @@ tr td {
 
 .image-container img {
   width: 100%;
+}
+
+.task-title {
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.task-content {
+  text-indent: 2em;
+}
+
+.text-input {
+  display: inline-block;
+  width: 100px;
+  border-bottom: 1px solid #666;
+}
+
+code pre {
+  padding: 20px 15px 0;
+  background: rgba(0, 0, 0, .8);
+  color: #fff;
+  line-height: 1.5;
+  font-size: 14px;
+  margin-top: 20px;
+  border-radius: 4px;
 }
