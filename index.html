@@ -206,14 +206,14 @@
                 </div>
               </li>
               <li class="list-group-item text-sm border-0 py-1">
-                2. 将别名查找代码(下面黄色标注的代码)复制到程序中的对应位置，注意缩进对齐。
+                2. 将别名查找代码(下面黑色阴影标注的全部范围)复制到程序中的对应位置，注意缩进对齐。
                 <code>
                   <pre>
-for k, v in alter.alter_names_dict.items():
-    if jia in poem[2] and yi == k:
-        for i in v:
-            if i in poem[1] or i in poem[3]:
-                gx = gx + 1
+    for k, v in alter.alter_names_dict.items():
+        if jia in poem[2] and yi == k:
+            for i in v:
+                if i in poem[1] or i in poem[3]:
+                    gx = gx + 1
                   </pre>
                 </code>
               </li>
@@ -230,22 +230,22 @@ for k, v in alter.alter_names_dict.items():
                 </div>
               </li>
               <li class="list-group-item text-sm border-0 py-1">
-                2. 将可视化诗人关系代码(下面黄色标注的代码)复制到程序的对应位置。
+                2. 将可视化诗人关系代码(下面黑色阴影标注的全部范围)复制到程序的对应位置。
                 <code>
                   <pre>
-# 用箭头的粗细表达关系
-root = tkinter.Tk()
-root.geometry('600x200')
-root.wm_attributes('-topmost',1)
-columnFont =('微软雅黑',20)
-titleFont = ('微软雅黑',20,'bold')
-cv=tkinter.Canvas(root,bg='white',width=500,height=200)
-cv.create_text((20, 100),text = jia, font = columnFont, fill = 'gray', anchor = 'w', justify = 'left')
-cv.create_text((250, 100), text = yi, font = columnFont, fill= 'gray', anchor = 'w', justify = 'left')
-if gx != 0:
-   cv.create_line((80, 100, 240, 100), arrow = 'last', arrowshape = '23', width = gx, joinstyle = 'bevel')
-cv.pack()
-root.mainloop()
+    # 用箭头的粗细表达关系
+    root = tkinter.Tk()
+    root.geometry('600x200')
+    root.wm_attributes('-topmost',1)
+    columnFont =('微软雅黑',20)
+    titleFont = ('微软雅黑',20,'bold')
+    cv=tkinter.Canvas(root,bg='white',width=500,height=200)
+    cv.create_text((20, 100),text = jia, font = columnFont, fill = 'gray', anchor = 'w', justify = 'left')
+    cv.create_text((250, 100), text = yi, font = columnFont, fill= 'gray', anchor = 'w', justify = 'left')
+    if gx != 0:
+       cv.create_line((80, 100, 240, 100), arrow = 'last', arrowshape = '23', width = gx, joinstyle = 'bevel')
+    cv.pack()
+    root.mainloop()
                   </pre>
                 </code>
               </li>
