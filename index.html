@@ -209,11 +209,11 @@
                 2. 将别名查找代码(下面黄色阴影标注的全部范围)复制到程序中的对应位置，注意缩进对齐。
                 <code>
                   <pre>
-    <span class="yellow-bg">for k, v in alter.alter_names_dict.items():
-        if jia in poem[2] and yi == k:
-            for i in v:
-                if i in poem[1] or i in poem[3]:
-                    gx = gx + 1</span>
+            <span class="yellow-bg">for k, v in alter.alter_names_dict.items():
+                if jia in poem[2] and yi == k:
+                    for i in v:
+                        if i in poem[1] or i in poem[3]:
+                            gx = gx + 1</span>
                   </pre>
                 </code>
               </li>
@@ -243,7 +243,7 @@
         cv.create_text((20, 100),text = jia, font = columnFont, fill = 'gray', anchor = 'w', justify = 'left')
         cv.create_text((250, 100), text = yi, font = columnFont, fill= 'gray', anchor = 'w', justify = 'left')
         if gx != 0:
-            cv.create_line((80, 100, 240, 100), arrow = 'last', arrowshape = '23', width = gx, joinstyle = 'bevel')
+            cv.create_line((80, 100, 240, 100), arrow = 'last', arrowshape = '20 20 3', width = gx, joinstyle = 'bevel')
         cv.pack()
         root.mainloop()</span>
                     </pre>
