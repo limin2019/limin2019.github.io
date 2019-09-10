@@ -46,7 +46,7 @@
           </p>
           <p><i class="icon iconfont icon-xinbaniconshangchuan-1 icon-md text-warning"></i> <span class="text-white bg-danger text-sm-only">提示</span></p>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item text-sm border-0 py-1">1. 在 《诗词库.txt》 文件中可以通过快捷键 <kbd><kbd>Ctrl</kbd> + <kbd>F</kbd></kbd> 打开“查找对话框” ，如图 2 所示;然后将杜 甫所有诗句选中复制到新文件(【文件】→【新建】)中，再依次查找李白</li>
+            <li class="list-group-item text-sm border-0 py-1">1. 在 《data.txt》 文件中可以通过快捷键 <kbd><kbd>Ctrl</kbd> + <kbd>F</kbd></kbd> 打开“查找对话框” ，如图 2 所示;然后将杜 甫所有诗句选中复制到新文件(【文件】→【新建】)中，再依次查找李白</li>
             <li class="list-group-item text-sm border-0 py-1">2. 为了提高效率，各组长要合理安排成员的分工，进行团队合作。</li>
           </ul>
           <p>第一步：查找诗人关系(可参考后面的提示操作)，填写下表</p>
@@ -134,7 +134,7 @@
               <td class="js_bunde" name="input-42" contenteditable="true"></td>
             </tr>
           </table>
-          <p style="margin-top: 15px;">第二步：根据表中的关系分析，绘制诗人关系图</p>
+          <p style="margin-top: 15px;">【该步骤省略不做】第二步：根据表中的关系分析，绘制诗人关系图</p>
           <div class="image-container">
             <div class="img" title="图1" ><img src="./images/img-1.png" alt=""></div>
             <div class="img" title="图2"><img src="./images/img-3.png" alt=""></div>
@@ -147,13 +147,16 @@
             <p>
               <i class="icon iconfont icon-xinbaniconshangchuan-6 icon-md text-warning"></i>
               <span class="text-white bg-warning text-sm-only">要求</span>
-              结合项目问题中枚举算法设计的流程图，从“枚举范围”、“验证条件”、“关系计数”等方面对指定程序 进行完善(可以两人一组互助完成)，实现查找诗人关系并显示题诗数量。
+              结合项目问题中枚举算法设计的流程图，从“枚举范围”、“验证条件”、“枚举对象”等方面对指定程序 进行完善(可以两人一组互助完成)，实现查找诗人关系并显示题诗数量。
             </p>
             <p><i class="icon iconfont icon-xinbaniconshangchuan-1 icon-md text-warning"></i> <span class="text-white bg-danger text-sm-only">提示</span></p>
             <ul class="list-group list-group-flush">
               <li class="list-group-item text-sm border-0 py-1">1. 打开程序文件:右键单击文件“查找诗人关系 v1.0.x.py”，选择 Edit with IDEL 命令打开文件。</li>
               <li class="list-group-item text-sm border-0 py-1">
-                2. 完善程序文件:结合枚举算法设计，对照下面提示的程序语句功能，在适合位置填写程序语句(注意切换英 文输入状态)。
+                2. 完善程序文件:结合枚举算法设计，对照图3提示的程序语句功能，选择下列程序语句在程序中填空位置填写程序语句(注意切换英 文输入状态)。
+                for  poem   in   poems:   #确定范围
+                if   jia   in poem[2] and (  yi  in poem[0] or yi  in poem[3]) : #验证条件
+                gx = gx + 1   #枚举对象
                 <div class="image-container" style="margin-top: 15px;">
                   <div class="img" title="图3: 程序分解图"><img src="./images/img-2.png" alt=""></div>
                 </div>
@@ -206,7 +209,7 @@
                 </div>
               </li>
               <li class="list-group-item text-sm border-0 py-1">
-                2. 将别名查找代码(下面黄色阴影标注的范围)复制到程序中的对应位置（A或B的位置），注意缩进对齐。
+                2. 【该过程省略，直接运行《学生用》文件夹中的程序“查找诗人关系v2.0.py”】将别名查找代码(下面黄色阴影标注的范围)复制到程序中的对应位置（A或B的位置），注意缩进对齐。
                 <code>
                   <pre>
                 <span class="yellow-bg">for k, v in alter.alter_names_dict.items():
@@ -230,7 +233,7 @@
                 </div>
               </li>
               <li class="list-group-item text-sm border-0 py-1">
-                2. 将可视化诗人关系代码(下面黄色阴影标注的范围)复制到程序的对应位置。
+                2. 将可视化诗人关系代码(下面黄色阴影标注的范围)复制到《学生用》文件夹中的程序“查找诗人关系v2.0.py”程序的对应位置。
                 <code>
                     <pre><span class="yellow-bg">
         # 用箭头的粗细表达关系
